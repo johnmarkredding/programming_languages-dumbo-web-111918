@@ -3,8 +3,10 @@ def reformat_languages(old_hash)
   old_hash.each do |style, langs|
     langs.each do |name, info|
       info[:style] = style
+      new_hash = 
     end
   end
+  new_hash
 end
 languages = {
   :oo => {
