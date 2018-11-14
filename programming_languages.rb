@@ -5,6 +5,8 @@ def reformat_languages(old_hash)
       new_hash[name] = info
       if new_hash[name][:style] != nil
         new_hash[name][:style] << style
+      else
+        new_hash[name][:style] = [style]
       end
     end
   end
