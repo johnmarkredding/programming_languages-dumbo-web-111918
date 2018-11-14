@@ -2,7 +2,7 @@ def reformat_languages(old_hash)
   new_hash = {}
   old_hash.each do |style, langs|
     langs.each do |name, info|
-      if new_hash[name].has(:style)
+      if new_hash[name].include?(:style)
         new_hash[name][:style] << style
       else
         new_hash[name] = info
